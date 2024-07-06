@@ -1,0 +1,92 @@
+
+#logo{
+    width: auto;
+    padding-top: 8px;
+    height: 70px;
+    display: flex;
+
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+
+
+
+
+
+#contenedordeimagenes{
+    display: flex;
+    width: 90%;
+    height: 70vh;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+margin-top: 40px;
+margin-left: 10px;
+}
+#contenedordeimagenes img{
+    flex: 0 0 100%;
+    width: 20% ;
+    scroll-snap-align: center;
+
+}
+.item{
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 0;
+    max-width: 1200px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#linea{
+    background-color: black;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+h1{
+    display: flex;
+    font-size: 20px;
+    padding-left: 40px;
+    color: white;
+
+}
+#contacto{
+display: flex;
+padding-top: 25px;
+
+}
+figcaption{
+    text-align: center;
+}
+
+@media only screen and  (min-device-width : 1000px ) and (max-device-width: 2000px){
+    #linea{
+      margin-top: 0px;
+      background-color: black;
+    }
+      #logo{
+   margin-left: -460px;
+   display: block;
+      }
+      h1{
+  position: fixed;
+  font-size: 40px;
+  margin-left: -300px;
+  color: white;
+  position: relative;
+  }
+  #contacto{
+      position: absolute;
+  padding-top: 30px;
+  font-size: 25px;
+  margin-left: 700px;
+  ;
+  }
+  }
